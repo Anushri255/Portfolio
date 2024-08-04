@@ -10,12 +10,13 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f0f0f0;
+            text-align: center;
         }
         nav {
             background: #333;
             color: #fff;
             padding: 1em;
-            text-align: center;
         }
         .subheadings div {
             display: inline;
@@ -33,19 +34,63 @@
             margin: 4px 2px;
             cursor: pointer;
         }
+        button:hover{
+            background-color: #8af18e;
+
+        }
+        section:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
         section {
             padding: 20px;
+            margin: 20px 0;
         }
         h1, h2, h3 {
             color: #333;
+            text-align: center;
         }
         .achieve ul, .work ul, .education ul {
             list-style-type: none;
             padding: 0;
+            text-align: left;
+            display: inline-block;
+        }
+        .achieve ul {
+            text-align: center;
+        }
+        .about-me {
+            background-color: #e6f7ff;
+        }
+        .achievements {
+            background-color: #fff0f5;
+        }
+        .work {
+            background-color: #e6ffe6;
+        }
+        .education {
+            background-color: #ffffe6;
+        }
+        .resume {
+            background-color: #f0f0f0;
+        }
+
+        .subheadings h1 {
+            color: #ffffff;
+            padding-bottom: 50px;
+            background-color: #d3d3d3
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="subheadings" style="padding-bottom: 50px;">
+            <h1 style="padding-top: 20px;">Personal Portfolio</h1>
+        </div>
+        
+    </nav>
+
     <nav>
         <div class="subheadings">
             <div><button onclick="window.location.href='#aboutMe'">Home</button></div>
@@ -56,14 +101,14 @@
         </div>
     </nav>
 
-    <section class="home">
+    <section class="home about-me">
         <h1 id="aboutMe">About Me</h1>
         <div class="AboutMe">
             <p>Hi! I’m Anushri, a high school student. I'm very passionate about science and technology and have recently started developing my web development skills by starting off with HTML, CSS, and JS.</p>
             <p>My hobbies include playing badminton, learning new programming languages, and watching cricket.</p>
             <h2>Contact Details</h2>
-            <p style="text-align:center">Ph. xxxxxxxxx</p>
-            <p style="text-align: center">Email: xxxxxx@gmail.com</p>
+            <p>Ph. xxxxxxxxx</p>
+            <p>Email: xxxxxx@gmail.com</p>
         </div>
     </section>
 
@@ -134,7 +179,9 @@
 
     <section class="resume">
         <h1 id="resume">Resume</h1>
-        <h3>Resume is still underway!!</h3>
+        <p>Click the button below to download my resume.</p>
+        <button onclick="window.location.href='resume.pdf'">Download Resume</button>
     </section>
+    
 </body>
 </html>
