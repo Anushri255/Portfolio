@@ -1,112 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Personal Portfilio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        .subheadings div {
+            display: inline;
+            margin: 0 15px;
+        }
+        button {
+            background: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .achieve ul, .work ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-
-
     <nav>
-      <div class = "subheadings">
-        <div><button onclick="window.location.href='#aboutMe'" >Home</button></div>
-        <div><button onclick="window.location.href='#Achievements'">Achievements</button></div>
-        <div><button onclick="window.location.href='#school'" >Education</button></div>
-        <div><button onclick="window.location.href='#paidWork'">Work Experience</button></div>
-        <div><button onclick="window.location.href='#resume'">Resume</button></div>
-      </div>
-      <p></p>
+        <div class="subheadings">
+            <div><button onclick="window.location.href='#aboutMe'">Home</button></div>
+            <div><button onclick="window.location.href='#Achievements'">Achievements</button></div>
+            <div><button onclick="window.location.href='#school'">Education</button></div>
+            <div><button onclick="window.location.href='#paidWork'">Work Experience</button></div>
+            <div><button onclick="window.location.href='#resume'">Resume</button></div>
+        </div>
     </nav>
 
-    <section class = "home">
-
-         <h1 id = "aboutMe">About me.</h1>
-         <div class = "AboutMe">
-         <p>Hi! I’m Anushri, a high school student. I'm very passionate about science and technology 
-            and have recently started developing my web development skills by starting off with HTML, CSS and JS.
-         </p>
-        <p></p>
-        <p>My Hobbies include playing badminton, learning new programming languages and watching cricket.</p>
-        <p></p>
-        <p></p>
-        <h2> Contact Details </h2>
-        <p style="text-align:center"> Ph. xxxxxxxxx </p>
-        <p style = "text-align: center"> Email: xxxxxx@gmail.com </p>
-
-      </div>
-
+    <section class="home">
+        <h1 id="aboutMe">About Me</h1>
+        <div class="AboutMe">
+            <p>Hi! I’m Anushri, a high school student. I'm very passionate about science and technology and have recently started developing my web development skills by starting off with HTML, CSS, and JS.</p>
+            <p>My hobbies include playing badminton, learning new programming languages, and watching cricket.</p>
+            <h2>Contact Details</h2>
+            <p style="text-align:center">Ph. xxxxxxxxx</p>
+            <p style="text-align: center">Email: xxxxxx@gmail.com</p>
+        </div>
     </section>
 
-       <section class = "achievements">
-         <h1 id = "Achievements">Achievements</h1>
-         <div class = "achieve"
-           <ul>
-           <li>7 GPA held across year 7, 8 and 9 </li>
-           <li>Excellence Award for Italian and Language</li>
-           <li>Completeting IB curriculum</li>
-           <li>Recieved excellence awards for Maths and Science in year 7 and 8 </li>
-         </div>
+    <section class="achievements">
+        <h1 id="Achievements">Achievements</h1>
+        <div class="achieve">
+            <ul>
+                <li>7 GPA held across year 7, 8, and 9</li>
+                <li>Excellence Award for Italian and Language</li>
+                <li>Completing IB curriculum</li>
+                <li>Received excellence awards for Maths and Science in year 7 and 8</li>
+            </ul>
+        </div>
+    </section>
 
-       </section>
-
-       <section class = "work">
-         <h1>Work Experience</h1>
-         <div id = "paidWork">
-           <h2> Unpaid Work </h2>
-           <h3> Library Volunteer</h3>
-           <p> Services Australia</p>
-           <p> November 2023 to Current</p>
-           <h3> Duties</h3>
-          <ul>
-            <li>	Organising activities for kids </li>
-              <li>	Answering booking/event enquiries</li>
-          </ul>
+    <section class="work">
+        <h1>Work Experience</h1>
+        <div id="paidWork">
+            <h2>Unpaid Work</h2>
+            <h3>Library Volunteer</h3>
+            <p>Services Australia</p>
+            <p>November 2023 to Current</p>
+            <h3>Duties</h3>
+            <ul>
+                <li>Organizing activities for kids</li>
+                <li>Answering booking/event inquiries</li>
+            </ul>
         </div>
 
-        <div id = "volunteer">
-           <h2>Volunteering</h2>
-           <h3> Volunteered at STEM club at Greenacres Library</h3>
-           <p> July 2024 </p>
-           <h3> Duties </h3>
-           <ul>
-             <li>	Helping students aged between 5 to 12 years learn basic coding using 'Scratch'</li>
-             <li>	Answering children's question relating to 'Scratch'</li>
-               <li>	Teaching children new skills </li>
-           </ul>
-         </div>
-       </section>
+        <div id="volunteer">
+            <h2>Volunteering</h2>
+            <h3>Volunteered at STEM club at Greenacres Library</h3>
+            <p>July 2024</p>
+            <h3>Duties</h3>
+            <ul>
+                <li>Helping students aged between 5 to 12 years learn basic coding using 'Scratch'</li>
+                <li>Answering children's questions relating to 'Scratch'</li>
+                <li>Teaching children new skills</li>
+            </ul>
+        </div>
+    </section>
 
-       <section class = "education">
-         <h1>Education</h1>
-         <div id = "school">
-           <h2>High School Education</h2>
-           <h3> High School</h3>
-           <p> Feb 2022 to Current</p>
-           <h3>Subjects Undertaking currently</h3>
-           <ul>
-             <li>	Mathematics</li>
-             <li>	English</li>
-                <li>	Italian</li>
-             <li>	Digital Technologies</li>
-             <li>	PE</li>
-             <li>	</li>
+    <section class="education">
+        <h1>Education</h1>
+        <div id="school">
+            <h2>High School Education</h2>
+            <h3>High School</h3>
+            <p>Feb 2022 to Current</p>
+            <h3>Subjects Undertaking currently</h3>
+            <ul>
+                <li>Mathematics</li>
+                <li>English</li>
+                <li>Italian</li>
+                <li>Digital Technologies</li>
+                <li>PE</li>
+            </ul>
+        </div>
 
-           </ul>
-         </div>
+        <div id="university">
+            <p>Not up to Uni yet!!</p>
+            <h3>Future Interests</h3>
+            <ul>
+                <li>Medicine</li>
+                <li>Software Engineering</li>
+            </ul>
+        </div>
+    </section>
 
-         <div id = "university">
-           <p>Not up to Uni yet!!</p>
-           <h3>Future Interests</h3>
-           <ul>
-             <li>Medicine</li>
-             <li>Software Engineering</li>
-           </ul>
-         </div>
-       </section>
-
-       <section class = "resume">
-         <h1 id = "resume">Resume</h1>
+    <section class="resume">
+        <h1 id="resume">Resume</h1>
         <h3>Resume is still underway!!</h3>
-       </section>
-
-  </body>
+    </section>
+</body>
 </html>
